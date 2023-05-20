@@ -1,0 +1,13 @@
+https://www.midjourney.com/api/app/recent-jobs/?amount=35&dedupe=true&isPublished=true&jobStatus=completed&jobType=upscale&minRankingScore=0&orderBy=new&page=2&prompt=undefined&refreshApi=0&searchType=advanced&service=null&userId=75250145-d9b5-48be-b4fd-60ae39237d59&user_id_ranked_score=0,4,5&_ql=todo&_qurl=https://www.midjourney.com/app/users/75250145-d9b5-48be-b4fd-60ae39237d59/
+
+https://www.midjourney.com/app/users/75250145-d9b5-48be-b4fd-60ae39237d59/
+
+https://www.midjourney.com/app/collections/dBPRonIsTPmmxTBLKi3kMA/
+
+
+// MKG JSON
+https://www.midjourney.com/api/app/recent-jobs/?amount=35&collectionID=7413d1a2-722c-4cf9-a6c5-304b2a2de430&dedupe=true&jobStatus=completed&jobType=upscale&orderBy=new&refreshApi=0&userId=95555de4-677b-4957-ad17-b778dbfd19ac
+
+
+// ICED JSON
+https://www.midjourney.com/api/app/recent-jobs/?amount=35&collectionID=8e2a2f8d-9297-4dbd-a16d-cd139c44d2b4&dedupe=true&jobStatus=completed&jobType=upscale&orderBy=new&refreshApi=0&searchType=advanced&service=null&userId=95555de4-677b-4957-ad17-b778dbfd19ac
