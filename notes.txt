@@ -11,3 +11,11 @@ https://www.midjourney.com/api/app/recent-jobs/?amount=35&collectionID=7413d1a2-
 
 // ICED JSON
 https://www.midjourney.com/api/app/recent-jobs/?amount=35&collectionID=8e2a2f8d-9297-4dbd-a16d-cd139c44d2b4&dedupe=true&jobStatus=completed&jobType=upscale&orderBy=new&refreshApi=0&searchType=advanced&service=null&userId=95555de4-677b-4957-ad17-b778dbfd19ac
+
+
+https://www.midjourney.com/app/jobs/da768686-311f-4faa-8556-d0e0580c6935/ 
+
+fetch("https://www.midjourney.com/api/app/job-status/", {
+  "body": "{\"jobIds\":[\"da768686-311f-4faa-8556-d0e0580c6935\"]}",
+  "method": "POST"
+});

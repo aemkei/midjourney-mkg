@@ -89,6 +89,8 @@
       height: 100%;
       width: 576px;
       overflow: hidden;
+      display: flex;
+      justify-content: center;
     }
 
     #logo {
@@ -129,6 +131,7 @@
       animation: normal ease-out forwards 1 imageFadeIn 30s;
       height: 100%;
       transition: opacity 1s;
+      align-self: center;
     }
   </style>
 </head>
@@ -136,13 +139,15 @@
   <div id="flex-container">
     <div id="container">
       <div id="slideshow"></div>
-      <div id="prompt">Loading …</div>
+      <div id="prompt">
+        Login to Midjourney in other window …<br> 
+        Then navigate to a image and hit COMMAND+ENTER
+      </div>
       <div id="logo">AWED</div>
     </div>
 
   </div>
   
-  <script src="test-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

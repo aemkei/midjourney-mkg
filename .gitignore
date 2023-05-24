@@ -2,3 +2,6 @@ node_modules
 tempCodeRunnerFile.js
 package-lock.json
 .vscode
+
+out/
+.DS_Store

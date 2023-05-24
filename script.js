@@ -1,18 +1,25 @@
 const slideshow = document.getElementById('slideshow');
 const prompt = document.getElementById('prompt');
+let currentID = null;
 
-function update(image) {
+function update(data) {
+
+  if (data.id == currentID) {
+    return
+  }
+
+  currentID = data.id;
+
   slideshow.innerHTML = '';
 
   const img = new Image();
-  img.src = image.path;
-  // img.src = image.path + "?" + Math.random();
+  img.src = data.path;
 
   img.onload = function(){
     slideshow.appendChild(img);
   }
 
-  const text = `"${image.prompt}"`;
+  const text = `"${data.prompt}"`;
 
   prompt.innerHTML = 'Prompt: <br><br>';
   
@@ -26,31 +33,17 @@ function update(image) {
   });  
 }
 
+let timerID;
 
-function test(){
+function fadeOutAndUpdate(data){
 
+  clearTimeout(timerID);
 
-  update(testData[0]);
-
-  let index = 0;
-
-  next();
-
-  function next(){
-    index++;
-    setTimeout(fadeOut, 30 * 1000)
-  }
-
-  function fadeOut(){    
-    document.body.classList.add('fade-out');
-    setTimeout(fadeIn, 4 * 1000)
-  }
+  document.body.classList.add('fade-out');
+  timerID = setTimeout(fadeIn, 4 * 1000);
 
   function fadeIn(){
     document.body.classList.remove('fade-out');
-    update(testData[index % testData.length]);
-    next();
+    update(data);
   }
 }
-
-test();
