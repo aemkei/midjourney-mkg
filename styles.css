@@ -1,0 +1,145 @@
+@font-face {
+	font-family: 'Regular';
+	src: url(https://static1.squarespace.com/static/6065b80ee03dec53cdbdc611/t/63ce8d7ed29d5235e00e9df6/1674481025285/Coco-Sharp-Regular.woff2);
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: #333;
+	color: #fff;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+#flex-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#container {
+	width: 1080px;
+	height: 720px;
+	background-color: #000;
+	overflow: hidden;
+	position: relative;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#prompt {
+	padding: 80px;
+	font-family: Regular;
+	text-transform: capitalize;
+	position: absolute;
+	left: 580px;
+	bottom: 0;
+	font-size: 14px;
+	line-height: 1.4em;
+	width: 500px;
+	box-sizing: border-box;
+	color: #999;
+}
+
+.fade-out #prompt,
+.fade-out #slideshow {
+	opacity: 0;
+}
+
+#prompt,
+#slideshow {
+	transition: opacity 3s;
+}
+
+.fade-out #slideshow {
+	transition-delay: 1s;
+}
+
+@keyframes textFadeIn {
+	0% {
+	}
+	100% {
+		opacity: 1;
+		filter: blur(0px);
+	}
+}
+
+#prompt span {
+	opacity: 0.4;
+	filter: blur(2px);
+	animation: normal forwards 1 textFadeIn 5s;
+}
+
+#slideshow {
+	height: 100%;
+	width: 576px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+	padding: 80px;
+	font-family: Regular;
+	position: absolute;
+	left: 0;
+	width: 576px;
+	text-align: right;
+	bottom: 0;
+	color: #000;
+	font-size: 14px;
+	line-height: 1.4em;
+	box-sizing: border-box;
+}
+
+@keyframes imageFadeIn {
+	0% {
+		opacity: 0;
+		transform-origin: 50% 20%;
+		transform: scale(1.5);
+		filter: blur(100px) saturate(200%);
+	}
+
+	10% {
+		opacity: 1;
+	}
+
+	30% {
+		filter: blur(0px);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+#slideshow img {
+	animation: normal ease-out forwards 1 imageFadeIn 30s;
+	height: 100%;
+	transition: opacity 1s;
+	align-self: center;
+}
+
+
+a {
+	color: #FFF;
+}
+
+#bookmarklet {
+	cursor: grab;
+	outline: 1px solid #FFF;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 6px;
+	display: inline-block;
+	margin: 0.5em 0;
+}
