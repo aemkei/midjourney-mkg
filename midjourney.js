@@ -5,7 +5,7 @@
   }
 
   const origin = 'https://www.midjourney.com';
-  const galleryURL = 'http://localhost:3000/';
+  const galleryURL = 'https://aem1k.com/midjourney-mkg/';
 
   let id;
   const location = document.location;
