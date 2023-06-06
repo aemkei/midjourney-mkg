@@ -1,3 +1,8 @@
+:root {
+	--padding: 6vi;
+	--fontsize: 1.5vi;
+}
+
 @font-face {
 	font-family: 'Regular';
 	src: url(https://static1.squarespace.com/static/6065b80ee03dec53cdbdc611/t/63ce8d7ed29d5235e00e9df6/1674481025285/Coco-Sharp-Regular.woff2);
@@ -38,13 +43,13 @@ body {
 }
 
 #prompt {
-	padding: 6vi;
+	padding: var(--padding);
 	font-family: Regular;
 	text-transform: capitalize;
 	position: absolute;
 	left: calc(80vh);
 	bottom: 0;
-	font-size: 1.5vi;
+	font-size: var(--fontsize);
 	line-height: 1.4em;
 	color: #999;
 }
@@ -87,7 +92,7 @@ body {
 }
 
 #logo {
-	padding: 6vi;
+	padding: var(--padding);
 	position: absolute;
 	right: 0;
 	width: 80vh;
