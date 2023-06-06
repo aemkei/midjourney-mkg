@@ -87,19 +87,17 @@ body {
 }
 
 #logo {
-	padding: 5.6vi 6vi;
+	padding: 6vi;
 	position: absolute;
-	left: 0;
+	right: 0;
 	width: 80vh;
 	text-align: right;
-	bottom: 0;
-	font-size: 1.5vi;
+	top: 0;
 	line-height: 1.4em;
-	box-sizing: border-box;
 }
 
 #logo img {
-	width: 8vi;
+	width: 6vi;
 }
 
 @keyframes imageFadeIn {
