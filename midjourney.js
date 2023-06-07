@@ -48,7 +48,7 @@
     .then(resp => resp.json())
     .then(result => {
       const data = {
-        prompt: result.prompt,
+        prompt: result.full_command,
         id: result.id,
         path: result.image_paths[0]
       };
